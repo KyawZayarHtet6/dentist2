@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}This is about Dr.KyawZayarHtet{% endblock %}
+{% block meta_description%}Kyaw Zayar Htet{% endblock %}
+{% block content%}
+
+<div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+<div class="container h-100">
+<div class="row h-100 align-items-center">
+<div class="col-12">
+<h2 class="title">Contact</h2>
+</div>
+</div>
+</div>
+</div>
+<div class="breadcumb--con">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+<li class="breadcrumb-item active" aria-current="page">Appointment</li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+</div>
+
+
+<center>
+<h1>Review Your Information</h1>
+
+<strong>Your Name: </strong><p>{{your_name}}</p><br>
+<strong>Your Phone: </strong><p>{{your_phone}}</p><br>
+<strong>Your Email: </strong><p>{{your_email}}</p><br>
+<strong>Your Address: </strong><p>{{your_address}}</p><br>
+<strong>Your Schedule: </strong><p>{{your_schedule}}</p><br>
+<strong>Your Time: </strong><p>{{your_time}}</p><br>
+<strong>Your Message: </strong><p>{{your_message}}</p><br><br><br><br>
+
+<strong>Note: </strong> <p>
+	We well recive your message.
+	We will contact you shortly.
+</p>
+
+</center>
+
+
+
+
+
+{% endblock %}
+
+
+
